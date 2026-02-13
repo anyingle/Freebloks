@@ -78,6 +78,22 @@ Quit the app at any time, your current game will be saved and restored on next s
 
 The game is network-compatible with Freebloks 3D for Windows and Linux.
 
+
+## Web version (new)
+
+A lightweight browser version is now included under `web/`.
+
+Run locally:
+
+```bash
+cd web
+python3 -m http.server 8080
+```
+
+Then open <http://localhost:8080>.
+
+This web build currently focuses on local pass-and-play with core Blokus placement rules.
+
 ## Getting started
 
 This uses <a href="https://github.com/shlusiak/Freebloks-3D">shlusiak/Freebloks-3D</a> as a `git submodule` to build the backend. Make sure to initialise the submodule before building:
