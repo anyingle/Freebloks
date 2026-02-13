@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freebloks Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Freebloks Web（本地多人）</h1>
+    <p class="hint">规则：首步必须下在自己的角，后续必须角接、不能边接同色。</p>
+
+    <section class="topbar">
+      <div id="turnInfo"></div>
+      <div class="controls">
+        <button id="rotateBtn">旋转 90°</button>
+        <button id="flipBtn">镜像</button>
+        <button id="passBtn">跳过</button>
+        <button id="restartBtn">重新开始</button>
+      </div>
+    </section>
+
+    <section class="layout">
+      <div id="board" aria-label="20x20 棋盘"></div>
+      <aside>
+        <h2>可用棋子</h2>
+        <div id="pieceList"></div>
+        <h2>分数</h2>
+        <ul id="scoreList"></ul>
+        <div id="status"></div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
